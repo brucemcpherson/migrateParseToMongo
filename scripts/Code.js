@@ -29,10 +29,16 @@ function copyFromParseToMongo() {
     throw JSON.stringify(parseResult);
   }
 
+  // delete anything currently in mongo
+  var mongoResult = mongo.remove();
+  if (mongoResult.handleCode < 0) {
+    throw JSON.stringify(mongoResult);
+  }
+  
   // write it to mongo
   var mongoResult = mongo.save(parseResult.data);
-  if (parseResult.handleCode < 0) {
-    throw JSON.stringify(parseResult);
+  if (mongoResult.handleCode < 0) {
+    throw JSON.stringify(mongoResult);
   }
   
   // do a count
