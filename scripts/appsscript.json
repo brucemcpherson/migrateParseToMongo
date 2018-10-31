@@ -1,0 +1,19 @@
+{
+  "timeZone": "Europe/London",
+  "dependencies": {
+    "libraries": [{
+      "userSymbol": "cDbAbstraction",
+      "libraryId": "1Ddsb4Y-QDUqcw9Fa-rJKM3EhG2caosS9Nhch7vnQWXP7qkaMmb1wjmTl",
+      "version": "41"
+    }, {
+      "userSymbol": "cDriverMongoLab",
+      "libraryId": "11N6camwOikILS28dwqvIlv44D1y0JMCTL9IeeUKkDV1amGvjWIeg-KbH",
+      "version": "6"
+    }, {
+      "userSymbol": "cDriverParse",
+      "libraryId": "17R_UVC7g6aWPGcQutcEK5e2o1YRJOXp2AA_qgv52qGcivryrEpiM_x9O",
+      "version": "9"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER"
+}
